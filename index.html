@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roofing Services in Tampa Bay & Central Florida | TPS Roofing Solutions</title>
+<meta name="description" content="TPS Roofing Solutions provides residential and commercial roofing services across Tampa Bay and Central Florida. Licensed, insured, and backed by The Purple Standard.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Lexend+Exa:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand-dark:       #1a1a1a;
+    --brand-medium:     #333333;
+    --brand-accent:     #666666;
+    --brand-light:      #999999;
+    --brand-highlight:  #555555;
+    --white:            #ffffff;
+    --black:            #000000;
+    --light-bg:         #f5f5f5;
+    --lighter-bg:       #fafafa;
+    --border-color:     #e0e0e0;
+    --border-light:     #eeeeee;
+    --text-primary:     #1a1a1a;
+    --text-secondary:   #555555;
+    --text-muted:       #888888;
+    --text-hint:        #aaaaaa;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    background: var(--white);
+    line-height: 1.7;
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+
+  section { padding: 100px 48px; }
+
+  .section-label {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 11px; font-weight: 500;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--brand-accent);
+    margin-bottom: 12px; display: inline-block;
+  }
+
+  .section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px; font-weight: 600;
+    text-transform: uppercase;
+    color: var(--brand-dark);
+    margin-bottom: 20px; letter-spacing: -0.5px;
+  }
+
+  .section-subtitle {
+    font-size: 17px; color: var(--text-secondary);
+    line-height: 1.75; max-width: 680px;
+    margin-bottom: 48px;
+  }
+
+  .fade-up {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .stagger-1 { transition-delay: 0.1s; }
+  .stagger-2 { transition-delay: 0.2s; }
+  .stagger-3 { transition-delay: 0.3s; }
+  .stagger-4 { transition-delay: 0.4s; }
+
+  /* ── NAV ─────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100; background: var(--brand-dark);
+    padding: 0 48px; height: 72px;
+    display: flex; align-items: center;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-container {
+    width: 100%; max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 12px; text-decoration: none;
+  }
+
+  .nav-logo-icon {
+    width: 36px; height: 36px; background: var(--white);
+    border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  }
+  .nav-logo-icon svg { width: 20px; height: 20px; }
+
+  .nav-logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; font-size: 17px;
+    color: var(--white); letter-spacing: -0.3px;
+  }
+
+  .nav-links {
+    display: flex; gap: 32px; align-items: center; list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 11px; font-weight: 500;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-cta {
+    background: var(--white) !important; color: var(--brand-dark) !important;
+    padding: 10px 24px; border-radius: 6px; font-weight: 600 !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+  }
+  .nav-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+  }
+
+  .nav-hamburger {
+    display: none; flex-direction: column; gap: 5px;
+    background: none; border: none; cursor: pointer; padding: 4px;
+  }
+  .nav-hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--white); border-radius: 2px; transition: all 0.3s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* ── HERO ─────────────────────────────────────── */
+  .hero {
+    margin-top: 72px; background: var(--brand-dark);
+    position: relative; overflow: hidden;
+    min-height: 600px; display: flex; align-items: center;
+  }
+
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 80% 40%, rgba(255,255,255,0.04) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 50% at 20% 80%, rgba(255,255,255,0.03) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: ''; position: absolute; inset: 0; opacity: 0.03;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.5) 59px, rgba(255,255,255,0.5) 60px),
+      repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.5) 59px, rgba(255,255,255,0.5) 60px);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto; padding: 80px 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 4.5vw, 52px); font-weight: 800;
+    text-transform: uppercase; color: var(--white);
+    margin-bottom: 24px; letter-spacing: -1px;
+  }
+  .hero h1 em { font-style: normal; color: rgba(255,255,255,0.5); }
+
+  .hero-desc {
+    font-size: 18px; color: rgba(255,255,255,0.7);
+    line-height: 1.8; max-width: 520px; margin-bottom: 28px;
+  }
+
+  .hero-tps-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 32px;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 11px; font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+  }
+  .hero-tps-badge svg {
+    width: 16px; height: 16px; stroke: rgba(255,255,255,0.35);
+    fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .hero-ctas { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 32px; background: var(--white); color: var(--brand-dark);
+    border: none; border-radius: 8px;
+    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600;
+    text-decoration: none; cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+  .btn-primary svg { width: 18px; height: 18px; }
+
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 32px; background: transparent; color: var(--white);
+    border: 2px solid rgba(255,255,255,0.2); border-radius: 8px;
+    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600;
+    text-decoration: none; cursor: pointer; transition: all 0.2s;
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.4); transform: translateY(-2px); }
+  .btn-outline svg { width: 18px; height: 18px; }
+
+  .hero-photo {
+    background: rgba(255,255,255,0.04); border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.06);
+    aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.2); font-family: 'Poppins', sans-serif;
+    font-size: 14px; text-align: center; padding: 24px;
+    position: relative; overflow: hidden;
+  }
+  .hero-photo::before {
+    content: ''; position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), transparent 40%, transparent 60%, rgba(255,255,255,0.05));
+    pointer-events: none;
+  }
+
+  .photo-placeholder {
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+  }
+  .photo-placeholder svg { width: 32px; height: 32px; opacity: 0.4; }
+
+  /* ── EMERGENCY BANNER ──────────────────────── */
+  .emergency-bar {
+    background: var(--brand-medium); padding: 20px 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .emergency-bar-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    flex-wrap: wrap;
+  }
+  .emergency-bar .bar-icon {
+    width: 40px; height: 40px; background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .emergency-bar .bar-icon svg {
+    width: 20px; height: 20px; stroke: rgba(255,255,255,0.7);
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+  .bar-text {
+    font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600;
+    color: var(--white); letter-spacing: 0.02em;
+  }
+  .bar-text span {
+    color: rgba(255,255,255,0.5); font-weight: 400; font-size: 14px;
+  }
+  .bar-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 24px; background: var(--white); color: var(--brand-dark);
+    border-radius: 6px; font-family: 'Poppins', sans-serif;
+    font-size: 13px; font-weight: 600; text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s; margin-left: 8px;
+  }
+  .bar-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+  .bar-cta svg { width: 14px; height: 14px; }
+
+  /* ── TRUST BAR ──────────────────────────────── */
+  .trust-bar {
+    background: var(--lighter-bg); padding: 0 48px;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .trust-bar-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: center; align-items: center;
+    gap: 64px; flex-wrap: wrap; padding: 28px 0;
+  }
+
+  .trust-item { display: flex; align-items: center; gap: 12px; }
+
+  .trust-icon {
+    width: 40px; height: 40px; background: var(--white);
+    border: 1px solid var(--border-color); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .trust-icon svg {
+    width: 20px; height: 20px; stroke: var(--brand-medium);
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .trust-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; font-weight: 600; color: var(--brand-dark);
+  }
+
+  /* ── ABOUT SECTION ──────────────────────────── */
+  .about-section { background: var(--white); }
+
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+  }
+
+  .about-text p {
+    font-size: 16px; color: var(--text-secondary);
+    line-height: 1.85; margin-bottom: 20px;
+  }
+  .about-text p:last-of-type { margin-bottom: 0; }
+
+  .about-image {
+    background: var(--light-bg); border-radius: 14px;
+    aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+    color: var(--text-hint); font-size: 14px; font-family: 'Poppins', sans-serif;
+    border: 1px solid var(--border-light); position: relative; overflow: hidden;
+  }
+  .about-image::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--brand-dark), var(--brand-accent), var(--brand-light));
+  }
+
+  /* ── SERVICES HUB / JUMP LINKS ─────────────── */
+  .services-hub { background: var(--light-bg); }
+
+  .services-hub-desc {
+    font-size: 17px; color: var(--text-secondary);
+    line-height: 1.8; max-width: 760px; margin-bottom: 48px;
+  }
+
+  .jump-links {
+    display: flex; flex-wrap: wrap; gap: 12px;
+  }
+
+  .jump-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 24px; border-radius: 8px;
+    background: var(--white); border: 1px solid var(--border-color);
+    font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600;
+    color: var(--brand-dark); text-decoration: none;
+    transition: all 0.2s; cursor: pointer;
+  }
+  .jump-link:hover {
+    background: var(--brand-dark); color: var(--white); border-color: var(--brand-dark);
+    transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  .jump-link svg {
+    width: 14px; height: 14px; stroke: currentColor;
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  /* ── SERVICE SECTIONS (card grids) ─────────── */
+  .svc-section { padding: 100px 48px; }
+  .svc-section:nth-child(odd) { background: var(--white); }
+  .svc-section:nth-child(even) { background: var(--light-bg); }
+
+  .svc-header { margin-bottom: 48px; }
+
+  .svc-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px; font-weight: 700;
+    text-transform: uppercase; color: var(--brand-dark);
+    margin-bottom: 8px; letter-spacing: -0.5px;
+  }
+
+  .svc-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; font-weight: 500;
+    color: var(--brand-accent); margin-bottom: 16px;
+  }
+
+  .svc-desc {
+    font-size: 16px; color: var(--text-secondary);
+    line-height: 1.75; max-width: 760px;
+  }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+
+  .service-card {
+    background: var(--white); border: 1px solid var(--border-light);
+    border-radius: 12px; padding: 36px 28px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    position: relative; overflow: hidden;
+    text-align: center;
+  }
+
+  .svc-section:nth-child(even) .service-card { background: var(--white); }
+  .svc-section:nth-child(odd) .service-card { background: var(--lighter-bg); }
+
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: var(--brand-medium);
+    transform: scaleX(0); transition: transform 0.3s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    border-color: var(--brand-accent);
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-card-icon {
+    width: 52px; height: 52px; background: var(--light-bg);
+    border-radius: 12px; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+  }
+  .service-card-icon svg {
+    width: 26px; height: 26px; stroke: var(--brand-dark);
+    fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .service-card h3 {
+    font-size: 18px; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 14px; color: var(--text-secondary); line-height: 1.7;
+  }
+
+  /* ── BACK TO TOP BUTTON ────────────────────── */
+  .services-grid-2x2 {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+  }
+
+  .back-to-services {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 48px; padding: 10px 20px;
+    background: transparent; border: 1px solid var(--border-color);
+    border-radius: 6px; font-family: 'Poppins', sans-serif;
+    font-size: 13px; font-weight: 500; color: var(--text-muted);
+    text-decoration: none; transition: all 0.2s;
+  }
+  .back-to-services:hover {
+    background: var(--brand-dark); color: var(--white); border-color: var(--brand-dark);
+  }
+  .back-to-services svg {
+    width: 14px; height: 14px; stroke: currentColor;
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  /* ── ADDITIONAL SERVICES (lighter treatment) ── */
+  .additional-section { background: var(--white); }
+
+  .additional-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  }
+
+  .additional-card {
+    padding: 28px 24px; border-radius: 10px;
+    background: var(--light-bg); border: 1px solid var(--border-light);
+    transition: all 0.2s; text-align: center;
+  }
+  .additional-card:hover {
+    border-color: var(--brand-accent);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+  }
+
+  .additional-card-icon {
+    width: 44px; height: 44px; background: var(--white);
+    border: 1px solid var(--border-color); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 14px;
+  }
+  .additional-card-icon svg {
+    width: 22px; height: 22px; stroke: var(--brand-accent);
+    fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .additional-card h4 {
+    font-size: 15px; font-weight: 700; color: var(--brand-dark); margin-bottom: 8px;
+  }
+
+  .additional-card p {
+    font-size: 13px; color: var(--text-muted); line-height: 1.6;
+  }
+
+  /* ── WHY CHOOSE US — FLIP CARDS ─────────────── */
+  .why-section { background: var(--light-bg); }
+
+  .why-cards {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  }
+
+  .flip-card {
+    perspective: 800px; height: 220px;
+  }
+
+  .flip-card-inner {
+    position: relative; width: 100%; height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute; inset: 0;
+    backface-visibility: hidden;
+    border-radius: 12px; border: 1px solid var(--border-light);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 28px 20px; text-align: center;
+  }
+
+  .flip-card-front { background: var(--white); }
+
+  .flip-card-back {
+    background: var(--brand-dark); color: var(--white);
+    transform: rotateY(180deg);
+    border-color: var(--brand-medium);
+  }
+
+  .flip-card-icon {
+    width: 56px; height: 56px; background: var(--light-bg);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .flip-card-icon svg {
+    width: 26px; height: 26px; stroke: var(--brand-dark);
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .flip-card-front h3 {
+    font-size: 16px; font-weight: 700; color: var(--brand-dark);
+  }
+
+  .flip-card-back p {
+    font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.7;
+  }
+
+  /* ── PURPLE STANDARD SECTION ─────────────────── */
+  .tps-section {
+    background: var(--brand-dark); position: relative; overflow: hidden;
+  }
+  .tps-section::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 10% 90%, rgba(255,255,255,0.03) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 60% at 90% 20%, rgba(255,255,255,0.04) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .tps-inner {
+    position: relative; z-index: 2;
+    max-width: 800px; margin: 0 auto; text-align: center;
+  }
+
+  .tps-section .section-title { color: var(--white); font-size: 36px; }
+
+  .tps-badge-icon {
+    width: 72px; height: 72px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+  }
+  .tps-badge-icon svg {
+    width: 36px; height: 36px; stroke: rgba(255,255,255,0.4);
+    fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .tps-desc {
+    font-size: 17px; color: rgba(255,255,255,0.65); line-height: 1.8;
+  }
+
+  /* ── SERVICE AREA ────────────────────────────── */
+  .area-section { background: var(--light-bg); }
+
+  .area-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+  }
+
+  .area-map {
+    width: 100%; aspect-ratio: 4/3;
+    background: var(--white); border: 1px solid var(--border-color);
+    border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    color: var(--text-hint); font-size: 14px; font-family: 'Poppins', sans-serif;
+  }
+
+  .county-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+
+  .county-pill {
+    padding: 10px 20px; border-radius: 8px;
+    background: var(--white); border: 1px solid var(--border-color);
+    font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500;
+    color: var(--brand-dark); transition: all 0.2s;
+  }
+  .county-pill:hover {
+    background: var(--brand-dark); color: var(--white); border-color: var(--brand-dark);
+  }
+
+  .area-note {
+    font-size: 14px; color: var(--text-muted);
+    font-style: italic; line-height: 1.6;
+  }
+
+  /* ── CONTACT SECTION ─────────────────────────── */
+  .contact-section { background: var(--white); }
+
+  .contact-grid {
+    display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: start;
+  }
+
+  .contact-copy h2 {
+    font-size: 28px; font-weight: 700; color: var(--brand-dark); margin-bottom: 8px;
+  }
+
+  .contact-copy .copy-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; font-weight: 500;
+    color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;
+  }
+
+  .contact-copy > p {
+    font-size: 15px; color: var(--text-secondary);
+    line-height: 1.8; margin-bottom: 16px;
+  }
+
+  .contact-details {
+    display: flex; flex-direction: column; gap: 14px; margin-top: 32px;
+  }
+
+  .contact-detail-item {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 20px; background: var(--light-bg);
+    border: 1px solid var(--border-color); border-radius: 8px;
+    text-decoration: none; color: inherit; transition: all 0.2s;
+  }
+  .contact-detail-item:hover {
+    border-color: var(--brand-accent);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+
+  .detail-icon {
+    width: 40px; height: 40px; background: var(--brand-dark);
+    border-radius: 8px; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .detail-icon svg {
+    width: 20px; height: 20px; stroke: var(--white);
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .detail-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 2px;
+  }
+
+  .detail-value { font-size: 15px; font-weight: 600; color: var(--brand-dark); }
+
+  .contact-form-wrap {
+    background: var(--white); border: 1px solid var(--border-color);
+    border-radius: 10px; overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  }
+
+  .form-header {
+    background: var(--brand-dark); padding: 24px 32px;
+  }
+  .form-header h3 {
+    font-size: 20px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.02em;
+    color: var(--white); margin-bottom: 4px;
+  }
+  .form-header p { font-size: 13px; color: rgba(255,255,255,0.5); }
+
+  .contact-form { padding: 28px 32px 32px; }
+  .form-row { margin-bottom: 16px; }
+  .form-row:last-child { margin-bottom: 0; }
+  .form-row-half { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; }
+
+  .form-group label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--brand-dark); margin-bottom: 6px;
+  }
+  .required { color: #c62828; }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; color: var(--text-primary);
+    background: var(--light-bg); border: 1px solid var(--border-color);
+    border-radius: 6px; padding: 11px 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none; width: 100%;
+  }
+  .form-group textarea { resize: vertical; min-height: 90px; }
+
+  .form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center;
+    padding-right: 36px; cursor: pointer;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: var(--brand-medium);
+    box-shadow: 0 0 0 3px rgba(51,51,51,0.08);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: var(--text-hint); }
+
+  .form-submit {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--white); background: var(--brand-dark);
+    padding: 14px 32px; border-radius: 6px;
+    border: none; cursor: pointer; transition: all 0.25s; width: 100%;
+  }
+  .form-submit:hover {
+    background: var(--brand-medium);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .form-submit svg {
+    width: 16px; height: 16px; fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .form-disclaimer {
+    font-size: 11px; line-height: 1.6; color: var(--text-muted);
+    margin-top: 16px; font-style: italic;
+  }
+  .form-disclaimer a { color: var(--brand-accent); text-decoration: underline; }
+
+  /* ── FOOTER ─────────────────────────────────── */
+  footer {
+    background: var(--brand-dark); color: rgba(255,255,255,0.6);
+    padding: 64px 48px 32px;
+  }
+
+  .footer-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px; margin-bottom: 48px;
+  }
+
+  .footer-brand p { font-size: 14px; line-height: 1.7; margin-top: 16px; }
+
+  .footer-logo {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+  }
+  .footer-logo-icon {
+    width: 32px; height: 32px; background: var(--white);
+    border-radius: 6px; display: flex; align-items: center; justify-content: center;
+  }
+  .footer-logo-icon svg { width: 18px; height: 18px; }
+
+  .footer-logo span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; font-size: 16px; color: var(--white);
+  }
+
+  .footer-col h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 1px;
+    color: var(--white); margin-bottom: 16px;
+  }
+
+  .footer-col a {
+    display: block; font-size: 14px;
+    color: rgba(255,255,255,0.6); text-decoration: none;
+    margin-bottom: 10px; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--white); }
+
+  .footer-bottom {
+    max-width: 1200px; margin: 0 auto; padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 14px;
+  }
+  .footer-bottom span { color: rgba(255,255,255,0.4); }
+
+  .footer-tps {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: rgba(255,255,255,0.3);
+  }
+  .footer-tps svg {
+    width: 18px; height: 18px; stroke: rgba(255,255,255,0.2);
+    fill: none; stroke-width: 1.5;
+  }
+
+  /* ── RESPONSIVE ─────────────────────────────── */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-photo { display: none; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .services-grid-2x2 { grid-template-columns: repeat(2, 1fr); }
+    .why-cards { grid-template-columns: repeat(2, 1fr); }
+    .area-grid { grid-template-columns: 1fr; }
+    .area-map { max-width: 480px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-image { max-width: 480px; }
+    .additional-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 24px; }
+    section, .svc-section { padding: 72px 24px; }
+    .container { padding: 0 24px; }
+    .hero-inner { padding: 60px 24px; }
+    .section-title, .svc-title { font-size: 28px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .services-grid-2x2 { grid-template-columns: 1fr; }
+    .why-cards { grid-template-columns: 1fr; }
+    .flip-card { height: 200px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+    .trust-bar-inner { gap: 24px; }
+    .form-row-half { grid-template-columns: 1fr; }
+    .contact-form { padding: 24px 20px 28px; }
+    .form-header { padding: 20px; }
+    .emergency-bar { padding: 16px 24px; }
+    .emergency-bar-inner { flex-direction: column; gap: 12px; }
+    .additional-grid { grid-template-columns: 1fr; }
+    .jump-links { gap: 8px; }
+    .jump-link { font-size: 13px; padding: 10px 18px; }
+  }
+
+  @media (max-width: 640px) {
+    .nav-links { display: none; flex-direction: column; gap: 0; }
+    .nav-links.open {
+      display: flex; position: fixed; top: 72px; left: 0; right: 0;
+      background: var(--brand-dark); padding: 24px; gap: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3); z-index: 99;
+    }
+    .nav-links.open a {
+      display: block; padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 12px;
+    }
+    .nav-links.open .nav-cta {
+      margin-top: 12px; text-align: center;
+      border-radius: 6px; padding: 12px 24px !important;
+    }
+    .nav-hamburger { display: flex; }
+    .hero-ctas { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-outline { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────── -->
+<nav>
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <span class="nav-logo-text">TPS Roofing Solutions</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#service-area">Service Area</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:8130000000" class="nav-cta">Call (813) XXX-XXXX</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1 class="fade-up">Residential & Commercial <em>Roofing in Tampa Bay</em></h1>
+      <p class="hero-desc fade-up stagger-1">From roof replacements and storm damage repair to commercial flat roofing systems, TPS Roofing Solutions delivers reliability, craftsmanship, and peace of mind for Tampa Bay homeowners and businesses.</p>
+      <div class="hero-tps-badge fade-up stagger-1">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Powered by The Purple Standard
+      </div>
+      <div class="hero-ctas fade-up stagger-2">
+        <a href="tel:8130000000" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (813) XXX-XXXX
+        </a>
+        <a href="#contact" class="btn-outline">
+          Get a Free Estimate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo fade-up stagger-2">
+      <div class="photo-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+        Crew on a roof, branded truck, or completed project
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EMERGENCY & DISASTER BAR ──────────────────────── -->
+<div class="emergency-bar fade-up">
+  <div class="emergency-bar-inner">
+    <div class="bar-icon">
+      <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </div>
+    <div class="bar-text">
+      Disaster &amp; Emergency Roofing Services Available &nbsp;<span>— Storm damage? We respond fast with tarping, repairs &amp; insurance support.</span>
+    </div>
+    <a href="tel:8130000000" class="bar-cta">
+      Call Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ── TRUST BAR ───────────────────────────────────── -->
+<div class="trust-bar fade-up">
+  <div class="trust-bar-inner">
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div><div class="trust-text">Licensed & Insured</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div><div class="trust-text">Financing Available</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <div><div class="trust-text">Free Inspections</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT TPS ROOFING SOLUTIONS ──────────────────── -->
+<section class="about-section">
+  <div class="container">
+    <h2 class="section-title fade-up">About TPS Roofing Solutions</h2>
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p>TPS Roofing Solutions is a full-service roofing company for residential and commercial properties across Tampa Bay and greater Central Florida. Our growing service area includes Hillsborough, Pasco, Pinellas, Hernando, Polk, Sumter, Citrus, Marion, and Levy counties.</p>
+        <p>Too many roofers disappear after the install. They'll complete the job, collect the check, and then you're on your own when something goes wrong two years later.</p>
+        <p>TPS Roofing Solutions is different. We're a full-lifecycle roofing partner — from initial inspection through installation, warranty support, and long-term maintenance. We stand behind every roof we touch.</p>
+        <p>Florida's roofs take a beating. Hurricanes, relentless sun, and heavy rain demand roofing systems that are built right, maintained properly, and backed by a company that answers the phone. That's us.</p>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 700; color: var(--brand-dark); margin-top: 8px;">One company. One standard.</p>
+        <div style="margin-top: 28px;">
+          <a href="tel:8130000000" class="btn-primary" style="background: var(--brand-dark); color: var(--white); box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (813) XXX-XXXX
+          </a>
+        </div>
+      </div>
+      <div class="about-image fade-up stagger-1">
+        <div class="photo-placeholder" style="color: var(--text-hint);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;opacity:0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+          Team photo, branded truck, or completed roofing project
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- ── SERVICES HUB — JUMP LINKS ─────────────────── -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="services-hub" id="services">
+  <div class="container">
+    <h2 class="section-title fade-up">Services</h2>
+    <p class="services-hub-desc fade-up">TPS Roofing Solutions provides end-to-end roofing services for residential homes, commercial buildings, and industrial facilities across Tampa Bay and Central Florida. Whether you need a full roof replacement, emergency storm repair, a real estate inspection, or a long-term maintenance plan — we have the team, the licenses, and the experience to handle it. </p>
+    <p class="services-hub-desc fade-up" style="font-weight: 600; color: var(--brand-dark); font-family: 'Poppins', sans-serif; margin-top: -32px;">Use the jump links below to access the service you need.</p>
+
+    <div class="jump-links fade-up stagger-1">
+      <a href="#svc-installation" class="jump-link">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        Roof Installation
+      </a>
+      <a href="#svc-repair" class="jump-link">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        Roof Repair
+      </a>
+      <a href="#svc-inspection" class="jump-link">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        Roof Inspection
+      </a>
+      <a href="#svc-restoration" class="jump-link">
+        <svg viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        Roof Restoration
+      </a>
+      <a href="#svc-maintenance" class="jump-link">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Roof Maintenance
+      </a>
+      <a href="#svc-insurance" class="jump-link">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Insurance & Real Estate
+      </a>
+      <a href="#svc-additional" class="jump-link">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        Additional Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── 1. ROOF INSTALLATION ────────────────────────── -->
+<section class="svc-section" id="svc-installation">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Roof Installation</h2>
+      <p class="svc-subtitle">New Roofs, Replacements & Material Expertise</p>
+      <p class="svc-desc">Whether you're building new, replacing an aging roof, or upgrading to a higher-performance system, TPS Roofing Solutions handles every type of residential and commercial roof installation. We work with all major roofing materials and build to Florida code.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>New Roof Installation</h3>
+        <p>Complete new roof systems for new construction and additions. Engineered for Florida's climate, built to code, and backed by manufacturer warranties.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <h3>Roof Replacement</h3>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 600; color: var(--brand-accent); margin-bottom: 10px; margin-top: -4px;">Tear-Off & Re-Roof</p>
+        <p>Full tear-off and replacement of your existing roof system. We remove old materials, inspect the decking, and install a brand-new roof from the ground up.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Overlay Roofing</h3>
+        <p>Installing a new roof over your existing system when conditions allow. A cost-effective option that saves time and reduces waste.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <h3>Asphalt Shingles</h3>
+        <p>Architectural, 3-tab, impact resistant, and cool roof shingles. The most popular residential option — versatile, durable, and cost-effective.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg></div>
+        <h3>Tile Roofing</h3>
+        <p>Concrete, clay, Spanish, and Mediterranean tile. Beautiful, durable, and built for Florida's architecture. Specialty clay tile work available.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polygon points="2 17 12 22 22 17"/></svg></div>
+        <h3>Metal Roofing</h3>
+        <p>Standing seam, corrugated, aluminum, metal shingles, and agricultural metal roofs. Long-lasting and energy efficient.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V3.5a1.5 1.5 0 0 0-3 0V7"/><path d="M8 7V5.5a1.5 1.5 0 0 1 3 0V7"/></svg></div>
+        <h3>Flat & Commercial Systems</h3>
+        <p>TPO, PVC, EPDM, modified bitumen, built-up roofing (BUR), torch down, and self-adhered membranes for commercial and industrial properties.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><rect x="9" y="12" width="6" height="8"/></svg></div>
+        <h3>Industrial Roofing</h3>
+        <p>Warehouse, factory, industrial membrane systems, and cold storage roofing. Built for large-scale commercial and industrial facilities.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg></div>
+        <h3>Custom Roof Design & Installation</h3>
+        <p>Complex roof designs and specialty installations. We work with your architect or engineer to execute the plan with precision.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── 2. ROOF REPAIR ──────────────────────────────── -->
+<section class="svc-section" id="svc-repair">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Roof Repair</h2>
+      <p class="svc-subtitle">Fast Response. Expert Repairs. All Materials.</p>
+      <p class="svc-desc">From a small leak to major storm damage, TPS Roofing Solutions provides expert roof repair services for residential and commercial properties. We diagnose the problem, explain your options clearly, and get it fixed right the first time.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+        <h3>Leak Repair</h3>
+        <p>Pinpoint leak detection and repair for all roof types. We trace the source, fix the problem, and prevent future water intrusion.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></div>
+        <h3>Storm Damage Repair</h3>
+        <p>Rapid assessment and repair after hurricanes, tropical storms, and severe weather events. We work with your insurance to get you covered.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg></div>
+        <h3>Wind Uplift Repair</h3>
+        <p>Repair and resecure roofing materials displaced by high winds. Critical for maintaining structural integrity and preventing further damage.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Structural Roof Repair</h3>
+        <p>Assessment and repair for structural concerns including the 25% rule. We inspect, diagnose, and coordinate with specialists when needed.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></div>
+        <h3>Flashing Repair</h3>
+        <p>Repair and replacement of chimney flashing, step flashing, counter flashing, and valley flashing to stop leaks at penetration points.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <h3>Shingle & Tile Replacement</h3>
+        <p>Individual and section replacement for damaged shingles, tiles, ridge caps, nail pops, and underlayment. Matched to your existing roof.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── 3. ROOF INSPECTION ──────────────────────────── -->
+<section class="svc-section" id="svc-inspection">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Roof Inspection</h2>
+      <p class="svc-subtitle">Know the True Condition of Your Roof</p>
+      <p class="svc-desc">A professional roof inspection gives you the facts you need to make informed decisions — whether you're buying a home, filing an insurance claim, or just want to know where your roof stands. TPS Roofing provides detailed, honest assessments.</p>
+    </div>
+    <div class="services-grid-2x2">
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Real Estate Roof Inspections</h3>
+        <p>Comprehensive inspections for buyers and sellers. Detailed reports with photos, findings, and recommended actions to support your transaction.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <h3>Insurance Inspections</h3>
+        <p>Documentation and assessments to support insurance claims and policy requirements. We provide the detail carriers need to process your claim.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></div>
+        <h3>Storm Damage Inspections</h3>
+        <p>Post-storm assessment to identify damage, document findings, and provide a clear path to restoration. Emergency inspections available.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Pre-Purchase Inspections</h3>
+        <p>Considering a property? Know the condition and remaining life of the roof before you commit. Avoid surprises after closing.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── 4. ROOF RESTORATION ─────────────────────────── -->
+<section class="svc-section" id="svc-restoration">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Roof Restoration</h2>
+      <p class="svc-subtitle">Extend the Life of Your Existing Roof</p>
+      <p class="svc-desc">Not every roof needs to be replaced. TPS Roofing Solutions offers restoration services that extend the functional life of your roof through rejuvenation treatments, coatings, and targeted restoration work — saving you money and reducing waste.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+        <h3>Roof Rejuvenation Treatments</h3>
+        <p>Bio-based treatments that restore flexibility and waterproofing to aging shingles, adding years of life to your existing roof.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Roof Sealing</h3>
+        <p>Professional sealing to protect against water infiltration, UV damage, and premature wear. Essential for flat and low-slope roofs.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></div>
+        <h3>Roof Coating Restoration</h3>
+        <p>Application of high-performance coatings to restore and protect your existing roof surface. Reflective options available for energy savings.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg></div>
+        <h3>Tile Roof Restoration</h3>
+        <p>Cleaning, re-sealing, and repair of tile roofs to restore their appearance and weather performance without full replacement.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polygon points="2 17 12 22 22 17"/></svg></div>
+        <h3>Metal Roof Restoration</h3>
+        <p>Cleaning, coating, and repair of metal roof panels, seams, and fasteners. Extend the life of your metal roof system by decades.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── 5. ROOF MAINTENANCE ─────────────────────────── -->
+<section class="svc-section" id="svc-maintenance">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Roof Maintenance</h2>
+      <p class="svc-subtitle">Prevent Problems Before They Start</p>
+      <p class="svc-desc">The best way to protect your roofing investment is with regular, proactive maintenance. TPS Roofing Solutions offers maintenance programs for both residential and commercial properties — keeping your roof in peak condition and your warranty intact.</p>
+    </div>
+    <div class="services-grid-2x2">
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Minor Repair Maintenance</h3>
+        <p>Small fixes handled before they become big problems. Cracked sealant, lifted shingles, minor flashing issues — we catch them early.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Roof Sealing & Coating</h3>
+        <p>Periodic re-sealing and coating application to maintain waterproofing and reflective performance over the life of your roof.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Roof Inspections & Tune-Ups</h3>
+        <p>Scheduled inspections with detailed reporting. We check every component, document conditions, and recommend proactive action.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></div>
+        <h3>Debris Removal</h3>
+        <p>Clearing accumulated debris from roof surfaces, valleys, and drainage systems. Especially important for commercial flat roofs.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── 6. INSURANCE & REAL ESTATE ROOF SERVICES ────── -->
+<section class="svc-section" id="svc-insurance">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Insurance & Real Estate Roof Services</h2>
+      <p class="svc-subtitle">Property Management, Claims Support & Compliance</p>
+      <p class="svc-desc">TPS Roofing Solutions supports property managers, real estate professionals, and property owners with specialized services including insurance claim inspections, roof condition reports, lifecycle analysis, and multi-property maintenance programs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <h3>Insurance Claim Inspections</h3>
+        <p>Thorough documentation and inspection reports designed to support your insurance claim. We photograph, measure, and detail every finding.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Insurance Roof Replacements</h3>
+        <p>End-to-end management of insurance-funded roof replacements. We coordinate with your carrier from claim to completion.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Roof Condition Reports</h3>
+        <p>Professional condition assessments for property portfolios, due diligence, and capital planning. Detailed reports with clear recommendations.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Lifecycle Analysis</h3>
+        <p>Data-driven projections of remaining roof life and replacement timelines. Helps property managers budget and plan capital expenditures.</p>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Preventative Maintenance Contracts</h3>
+        <p>Scheduled maintenance agreements for commercial and residential properties. Protects your investment and keeps warranties intact.</p>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Multi-Property Maintenance Programs</h3>
+        <p>Consolidated roofing services across multiple properties. One point of contact, consistent quality, and streamlined reporting for your entire portfolio.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── 7. ADDITIONAL ROOF SERVICES (lighter treatment) ── -->
+<section class="additional-section" id="svc-additional">
+  <div class="container">
+    <div class="svc-header fade-up">
+      <h2 class="svc-title">Additional Roof Services</h2>
+      <p class="svc-subtitle">We Also Handle These</p>
+      <p class="svc-desc">Beyond our core roofing services, TPS Roofing Solutions handles the specialized components that keep your roof system complete and performing — from flashing and vents to drainage and structural decking.</p>
+    </div>
+    <div class="additional-grid">
+      <div class="additional-card fade-up">
+        <div class="additional-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></div>
+        <h4>Flashing & Metal Work</h4>
+        <p>Chimney, step, counter, and valley flashing installation and repair. Critical for preventing leaks at roof intersections.</p>
+      </div>
+      <div class="additional-card fade-up stagger-1">
+        <div class="additional-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+        <h4>Penetrations & Ventilation</h4>
+        <p>Skylights, roof vents, plumbing vent flashing, exhaust fans, ridge vents, and attic ventilation systems.</p>
+      </div>
+      <div class="additional-card fade-up stagger-2">
+        <div class="additional-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+        <h4>Waterproofing & Drainage</h4>
+        <p>Flat roof waterproofing, roof drains, internal drains, overflow drains, and scupper installation.</p>
+      </div>
+      <div class="additional-card fade-up stagger-3">
+        <div class="additional-card-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><rect x="9" y="12" width="6" height="8"/></svg></div>
+        <h4>Structural & Decking</h4>
+        <p>Roof decking replacement and fascia repair/renovation. Foundational structural work to support your roofing system.</p>
+      </div>
+    </div>
+    <a href="#services" class="back-to-services">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Back to Services
+    </a>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US — FLIP CARDS ──────────────────── -->
+<section class="why-section">
+  <div class="container">
+    <h2 class="section-title fade-up">Why Choose TPS Roofing Solutions</h2>
+    <p class="section-subtitle fade-up">Every job reflects The Purple Standard — the principles that define how we operate, every day, without exception.</p>
+
+    <div class="why-cards">
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="flip-card-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <h3>Clear Communication</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>You'll always know what's happening, what it costs, and when we'll be there. No surprises, no roofer runaround.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card fade-up stagger-1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="flip-card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Built for Florida</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>We know Florida's building codes, hurricane requirements, and climate demands. Every roof we install is engineered for where you live.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card fade-up stagger-2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="flip-card-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Professionalism</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Uniformed crews, clean job sites, respect for your property. We represent The Purple Standard in everything we do.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card fade-up stagger-3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="flip-card-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3>Full-Lifecycle Partner</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>We don't disappear after the install. Inspection, installation, maintenance, and warranty support — we're here for the life of your roof.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICE AREA ────────────────────────────────── -->
+<section class="area-section" id="service-area">
+  <div class="container">
+    <h2 class="section-title fade-up">Serving Greater Tampa Bay</h2>
+    <p class="section-subtitle fade-up">Residential and commercial roofing services across Central Florida. Based in Tampa Bay with crews ready to deploy throughout the region.</p>
+
+    <div class="area-grid">
+      <div class="area-map fade-up">
+        Service area map placeholder (SVG or embedded map)
+      </div>
+      <div class="fade-up stagger-1">
+        <div class="county-pills">
+          <span class="county-pill">Hillsborough</span>
+          <span class="county-pill">Pasco</span>
+          <span class="county-pill">Pinellas</span>
+          <span class="county-pill">Hernando</span>
+          <span class="county-pill">Polk</span>
+          <span class="county-pill">Sumter</span>
+          <span class="county-pill">Citrus</span>
+          <span class="county-pill">Marion</span>
+          <span class="county-pill">Levy</span>
+        </div>
+        <p class="area-note">Don't see your area listed? Give us a call — we can provide quotes for additional Florida markets depending on your project.</p>
+        <div style="margin-top: 28px;">
+          <a href="/service-areas/" class="btn-primary" style="background: var(--brand-dark); color: var(--white); box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+            View All Service Areas
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TPS ROOFING: POWERED BY THE PURPLE STANDARD ── -->
+<section class="tps-section">
+  <div class="container">
+    <div class="tps-inner fade-up">
+      <div class="tps-badge-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <h2 class="section-title">TPS Roofing Solutions: Powered by The Purple Standard</h2>
+      <p class="tps-desc">TPS Roofing Solutions is a Purple Standard company, a family of essential service companies in Florida committed to modernizing their trades and delivering exceptional customer experiences. When you hire TPS Roofing, you get the craftsmanship of a specialized roofer and the service standards of a company built to be different.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT SECTION ─────────────────────────────── -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-copy fade-up">
+        <h2>Ready to Get Started?</h2>
+        <p class="copy-subtitle">Whether you need a roof inspection, have storm damage, or are planning a new roof, we're here to help.</p>
+        <p>Fill out the form to tell us about your property and what you need. A member of our team will reach out within one business day to discuss your options and schedule your free inspection.</p>
+        <p>Your home or business deserves the peace of mind that comes with knowing your roof is in expert hands. TPS Roofing Solutions — where your roof is done right.</p>
+
+        <div class="contact-details">
+          <a href="tel:8130000000" class="contact-detail-item">
+            <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><span class="detail-label">Call for Service</span><span class="detail-value">(813) XXX-XXXX</span></div>
+          </a>
+          <a href="mailto:office@tpsroofingsolutions.com" class="contact-detail-item">
+            <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><span class="detail-label">Email</span><span class="detail-value">office@tpsroofingsolutions.com</span></div>
+          </a>
+          <div class="contact-detail-item">
+            <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <div><span class="detail-label">Hours</span><span class="detail-value">Mon–Fri 7am–6pm</span><br><span style="font-size:12px;color:var(--text-muted);">Emergency service available</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-up stagger-1">
+        <div class="form-header">
+          <h3>Get Your Free Estimate</h3>
+          <p>We'll get back to you within one business day.</p>
+        </div>
+        <div class="contact-form">
+          <div class="form-row form-row-half">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first_name" placeholder="First" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last_name" placeholder="Last" required>
+            </div>
+          </div>
+          <div class="form-row form-row-half">
+            <div class="form-group">
+              <label for="contact-email">Email <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone <span class="required">*</span></label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="(813) 000-0000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service-type">Service Type <span class="required">*</span></label>
+              <select id="service-type" name="service_type" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="roof-installation">Roof Installation</option>
+                <option value="roof-replacement">Roof Replacement</option>
+                <option value="roof-repair">Roof Repair</option>
+                <option value="roof-inspection">Roof Inspection</option>
+                <option value="roof-restoration">Roof Restoration</option>
+                <option value="roof-maintenance">Roof Maintenance</option>
+                <option value="storm-damage">Storm / Hurricane Damage</option>
+                <option value="insurance-claim">Insurance Claim</option>
+                <option value="commercial-roofing">Commercial / Industrial</option>
+                <option value="property-management">Property Management</option>
+                <option value="emergency">Emergency Service</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-source">How Did You Hear About Us?</label>
+              <select id="contact-source" name="source">
+                <option value="" disabled selected>Select one</option>
+                <option value="google">Google</option>
+                <option value="social">Social Media</option>
+                <option value="chatgpt">ChatGPT</option>
+                <option value="referral">Friend or Family</option>
+                <option value="tps-company">Another Purple Standard Company</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-message">How Can We Help? <span class="required">*</span></label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your property, your roof, and what you need help with." required></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="form-submit">
+              Submit
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+          <p class="form-disclaimer">By submitting this form and signing up for texts, you consent to receive text messages from TPS Roofing Solutions at the number provided, including messages sent by auto dialer. Consent is not a condition of purchase. Msg &amp; data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <a href="/privacy-policy/">Privacy Policy</a> &amp; <a href="/terms-conditions/">Terms &amp; Conditions</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <span>TPS Roofing Solutions</span>
+      </div>
+      <p>Residential and commercial roofing services for Tampa Bay and Central Florida counties. Licensed, insured, and backed by The Purple Standard.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#svc-installation">Roof Installation</a>
+      <a href="#svc-repair">Roof Repair</a>
+      <a href="#svc-inspection">Roof Inspection</a>
+      <a href="#svc-restoration">Roof Restoration</a>
+      <a href="#svc-maintenance">Roof Maintenance</a>
+      <a href="#svc-insurance">Insurance & Real Estate</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/resources/">Resources</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:8130000000">(813) XXX-XXXX</a>
+      <a href="mailto:office@tpsroofingsolutions.com">office@tpsroofingsolutions.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Service Areas</h4>
+      <a href="/service-areas/hillsborough-county/">Hillsborough County</a>
+      <a href="/service-areas/pinellas-county/">Pinellas County</a>
+      <a href="/service-areas/pasco-county/">Pasco County</a>
+      <a href="/service-areas/polk-county/">Polk County</a>
+      <a href="/service-areas/hernando-county/">Hernando County</a>
+      <a href="/service-areas/citrus-county/">Citrus County</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 TPS Roofing Solutions &bull; <a href="/privacy-policy/" style="color:rgba(255,255,255,0.4);">Privacy Policy</a> &bull; <a href="/terms-conditions/" style="color:rgba(255,255,255,0.4);">Terms &amp; Conditions</a> &bull; <a href="/sitemap/" style="color:rgba(255,255,255,0.4);">Sitemap</a></span>
+    <div class="footer-tps">
+      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      Powered by The Purple Standard
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  const hamburger = document.getElementById('navHamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+</body>
+</html>
